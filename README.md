@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".adna/what/assets/banner.jpg" alt="aDNA — an open-source project template for humans and AI agents" width="100%">
+  <img src="what/assets/aDNABanner.png" alt="aDNA — retro pixel-art wordmark on a metal plate, set against glowing DNA helices rising from a workspace of laboratory instruments" width="100%">
 </p>
 
 # aDNA — Agentic DNA
@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Obsidian](https://img.shields.io/badge/Obsidian-Compatible-7C3AED)](https://obsidian.md)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Ready-F97316)](https://docs.anthropic.com/en/docs/claude-code)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](.adna/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://python.org)
 
 **An open-source project template where AI agents and humans share the same map.**
@@ -140,10 +140,9 @@ aDNA isn't a replacement for these systems — it's what happens when you need y
 
 The full technical documentation lives inside `.adna/`:
 
-- **[Detailed README](.adna/README.md)** — architecture deep-dive, lattice specification, all the details
-- **[aDNA Standard](.adna/what/docs/adna_standard.md)** — formal specification
-- **[Contributing](.adna/CONTRIBUTING.md)** — how to improve aDNA
-- **[Changelog](.adna/CHANGELOG.md)** — version history
+- **[aDNA Standard](what/docs/adna_standard.md)** — formal specification
+- **[Contributing](CONTRIBUTING.md)** — how to improve aDNA
+- **[Changelog](CHANGELOG.md)** — version history
 
 ---
 

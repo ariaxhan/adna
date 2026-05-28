@@ -7,7 +7,7 @@ status: active
 category: node_operations
 trigger: "Run `git pull --ff-only` across every vault listed in `inventory_vaults.md`. Per-vault outcome: pulled-clean / already-up-to-date / merge-conflict / network-error / not-a-git-repo. Does NOT auto-resolve conflicts (flags `#needs-human`)."
 last_edited_by: agent_stanley
-graduated_from: node.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
+graduated_from: LatticeHome.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
 graduated_at: 2026-05-14
 graduated_via: campaign_federation_beta_planning M-H.1.5
 tags: [skill, node_adna, vault_update, git_pull, graduated]
@@ -24,7 +24,7 @@ requirements:
 
 Runs `git pull --ff-only` across every vault listed in `what/inventory/inventory_vaults.yaml`. Reports a per-vault outcome table. Does NOT auto-resolve merge conflicts — surfaces them as `#needs-human` so the operator can decide.
 
-Safe-by-default: uses `--ff-only` (fails on non-fast-forward); skips vaults with no remote configured (local-by-default vaults like `node.aDNA/` itself).
+Safe-by-default: uses `--ff-only` (fails on non-fast-forward); skips vaults with no remote configured (local-by-default vaults like `LatticeHome.aDNA/` itself).
 
 ## Trigger
 
@@ -41,7 +41,7 @@ Invoked when:
 |---|---|---|
 | `dry_run` | CLI flag | No (default: false — when true, reports what would be pulled without doing it) |
 | `filter` | CLI arg | No (default: all — can limit to a subset, e.g., `--filter .aDNA` or `--filter forge`) |
-| `skip_local` | CLI flag | No (default: true — skips vaults with no remote like `node.aDNA/` itself) |
+| `skip_local` | CLI flag | No (default: true — skips vaults with no remote like `LatticeHome.aDNA/` itself) |
 
 ## Requirements
 
@@ -107,7 +107,7 @@ CanvasForge.aDNA                        PULLED_CLEAN         3 commits pulled
 ComfyForge.aDNA                         NON_FAST_FORWARD     #needs-human (divergent local commits)
 ComicForge.aDNA                         SKIPPED_LOCAL_ONLY   (no remote configured)
 ...
-node.aDNA                               SKIPPED_LOCAL_ONLY   (this vault — local-by-default)
+LatticeHome.aDNA                               SKIPPED_LOCAL_ONLY   (this vault — local-by-default)
 
 Summary:
 - N vaults checked

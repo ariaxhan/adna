@@ -7,7 +7,7 @@ status: active
 category: node_operations
 trigger: "Enumerate credential SOURCES on this node — env-vars matching `*_TOKEN`/`*_KEY`/`*_SECRET`, gh CLI auth status (token-NAME only, never value), ssh public keys at `~/.ssh/*.pub`, keychain entries by name (where queryable). Emits a redacted summary. Flags `#needs-human` if expired tokens detected. **NAMES ONLY** — never persists credential values, hashes, or last-4-chars."
 last_edited_by: agent_stanley
-graduated_from: node.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
+graduated_from: LatticeHome.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
 graduated_at: 2026-05-14
 graduated_via: campaign_federation_beta_planning M-H.1.5
 tags: [skill, node_adna, credentials, audit, redaction_aware, graduated]

@@ -7,7 +7,7 @@ status: active
 category: node_operations
 trigger: "Rebuild `inventory_vaults.{md,yaml}` + `inventory_system.{md,yaml}` from current node state. Detect new vaults at `~/lattice/*.aDNA/` (or grandfathered named projects); detect removed vaults (was-listed-now-missing); detect version drift (semver bump in target vault's CHANGELOG.md vs inventory-recorded version). Updates `STATE.md` `last_full_health_check` timestamp."
 last_edited_by: agent_stanley
-graduated_from: node.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
+graduated_from: LatticeHome.aDNA@411660e  # v0.1 initial bootstrap, M04 S2 of campaign_adna_v2_infrastructure
 graduated_at: 2026-05-14
 graduated_via: campaign_federation_beta_planning M-H.1.5
 tags: [skill, node_adna, inventory_refresh, graduated]
